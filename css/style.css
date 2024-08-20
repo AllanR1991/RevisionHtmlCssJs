@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&display=swap');
+
+.container__margin{
+    margin: 0 5%;
+}
+
+/* body */
+
+body{
+    background-color: #FCFCFC;
+}
+
+/* header mobile */
+
+.container__header{
+    background-image: linear-gradient(to right, #1E52B4, #002777
+    );
+}
+
+.container__header--internal{
+    display: flex;
+    flex-direction: column;
+    gap: 37px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+}
+
+.header__top{
+    position: fixed;
+    width: 100VW;
+    /* margin: 0 5%; */
+    left: 0;
+    top: 0;
+    padding: 22px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(to right, #1E52B4, #002777
+    );
+    
+}
+
+.header__top--search{
+    padding: 8px;
+    color: #FCFCFC;
+    font-size: 30px;
+}
+
+.header__top--menu{
+    padding: 8px;    
+    color: #FCFCFC;
+    font-size: 30px;
+}
+
+.header__top--nav{
+    position: absolute;
+    right: 5vw;
+    top: 90px;
+    right: 5%;
+    display: none;
+    /* background-image: linear-gradient(to right, #1E52B4, #002777); */
+    background-color: rgba(0, 39, 119,0.9);
+    box-shadow: -1px 5px 10px 10px rgba(0, 0, 0, 0.5);
+    padding: 10px 10px;
+    border-radius: 8px;
+}
+
+.nav__list{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.nav__list--item{
+    text-align: center;
+}
+
+.nav__list--item>a{
+    text-decoration: none;
+    color: #FAFAFA;    padding: 8px 0;
+    display: block;
+}
+
+.nav__list--item:last-child>a{
+    border: 1px #FFF solid;
+    border-radius: 8px;
+    padding: 9px 10px;
+    display: inline;
+    display: block;
+}
+
+
+.header__bottom{
+    margin-top: 90PX;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+}
+
+.container__information{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.container__information--title{
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    color: #FAFAFA;
+    font-size: 28px;
+    text-align: left;
+}
+
+.container__information--description{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    color: #FAFAFA;
+    text-align: justify;
+}
+
+.header__bottom--image{
+    width: 60%;
+    max-width: 379px;
+}
+
+.pesquisa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5%;
+}
+
+.formulario__pesquisa{
+    background-color: #FAFAFA;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    max-width: 942px;
+    border-radius: 8px;
+    padding: 31px;
+}
+
+.formulario__pesquisa--local{
+    border: none;
+    background-color: transparent;
+    color: #5F5C6B;
+}
+
+.formulario__pesquisa--local::placeholder{
+    color: #5F5C6B;
+}
+.container__DataCheckIn{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.formulario__pesquisa--checkInLabel{
+    padding: 8px 0;
+    font-size: 12px; 
+}
+
+.formulario__pesquisa--checkInInput{
+    border: none;    
+    background-color: transparent;
+}
+
+.container__DataCheckOut{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.formulario__pesquisa--checkOutLabel{
+    padding: 8px 0;
+    font-size: 12px; 
+}
+
+.formulario__pesquisa--checkOutInput{
+    border: none;    
+    background-color: transparent;
+}
+
+.formulari__pesquisa--botao{
+
+}
+
+#hoteis {
+    scroll-margin-top: 90px;
+}
+
+.section__article{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 30px;
+    gap: 31px;
+}
+
+.article__viagem{
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+    width: 260px;
+    height: 272px;
+}
+
+.article__viagem--image{
+    width: 100%;
+    height: 173px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.viagem__destino{
+    display: flex;
+    justify-content: space-between;
+}
+
+.viagem__destino--cidade{
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: #2E2636;
+}
+
+.viagem__destino--estado{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: #FFDF00;
+}
+
+.article__viagem--descricao{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: #33303E;
+}
+
+.publicidade{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 31px;
+}
+
+.publicidade__container{
+    display: flex;
+    flex-direction: column;
+    gap: 31px;
+}
+
+.publicidade__container--titulo{
+    font-family: 'Lato', sans-serif;
+    font-weight: 800;
+    font-size: 28px;
+    max-width: 455px;
+}
+
+
+.publicidade__container--descricao{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    max-width: 455px;
+}
+
+.publicidade--imagem{
+    width: 100%;
+    max-width: 449px;
+}
+
+
+
+.contato{
+    background-color: green;
+}
+
+.contato__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 33px 0;
+    gap: 20px;
+
+}
+
+.contato--titulo{
+    font-family: 'Inter', sans-serif ;
+    font-weight: 500;
+    font-size: 24px;
+    color: #FAFAFA;
+
+
+}
+
+.contato__address{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.contato__address--email{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.contato__address--tel{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.rodape{
+    background-color: #FFDF00;
+}
+
+.rodape__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.rodape__container--logo{
+
+}
